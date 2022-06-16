@@ -72,3 +72,6 @@ html {
   a:hover {
     text-decoration: none;
   }
+  img{
+      float: right;
+  }
