@@ -6,15 +6,16 @@ html {
 }
 
 body {
+  font-size: 12px;
   width: 80em;
-  margin: 0 auto;
+  margin: 5px;
 }
 
 
 /* Typography */
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h2 {
@@ -22,7 +23,7 @@ h2 {
 }
 
 p,li {
-  font-size: 1.9em;
+  font-size: 1.7em;
 }
 
 /*+++ more specific section styles +++*/
@@ -30,24 +31,26 @@ p,li {
 /* header and footer */
 
 header, footer {
-  background-color: teal;
+  background-color: #14756c;
   height: 10em;
-  padding: 2em;
+  padding: 0em;
 }
 
 h1, footer p {
-  margin: 1px;
+  margin: auto;
 }
 
 h1 {
   text-align: center;
-  padding: 0.5em 0;
+  padding: 1em 0;
+  margin: auto;
 }
 
 /* main content */
 
 main {
-  padding: 2em;
+  padding: 5em;
+  padding-top: -10em;
 }
 
 main p, main li {
@@ -55,5 +58,6 @@ main p, main li {
 }
 
 img {
-  float: right
+  float: right;
+  margin: 10px;
 }
