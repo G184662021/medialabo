@@ -9,6 +9,7 @@ html {
     width: 80em;
     margin: 0 auto;
     background-image: url(20220526_215354.jpg);
+    background-size: contain;
   }
   
   
