@@ -74,4 +74,5 @@ html {
   }
   img{
       float: right;
+      max-width: 30%;
   }
