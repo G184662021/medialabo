@@ -60,7 +60,14 @@ html {
     line-height: 2;
   }
   
-  img {
-    float: right
-    margin 1.2em 2em;
+  a:link {
+    color: rgb(13, 112, 21);
+  }
+  
+  a:visited {
+    color: rgb(206, 131, 221);
+  }
+  
+  a:hover {
+    text-decoration: none;
   }
