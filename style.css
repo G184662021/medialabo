@@ -27,6 +27,7 @@ html {
   }
   h4{
       font-size: 2.0em;
+      border-bottom: solid 10px black;
   }
   p,li {
     font-size: 1.5em;
