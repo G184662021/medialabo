@@ -6,11 +6,13 @@ console.log('答え: ' + kotae);      // デバッグ用
 let kaisu = 0;
 
 // 予想を4回実行する
+for(kaisu of 4){
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 hantei();
 hantei();
 hantei();
 hantei();
+}
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
