@@ -81,19 +81,61 @@ html {
       max-width: 30%;
   }
 
-  .anim-box.slidein{
-    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
-  }
-   
-  @keyframes slideIn {
-    0% {
-      transform: translateX(180px);
-      opacity: 0;
+  
+  .fadeIn {
+    animation-name: fadeInAnime;/*1で解説*/
+    animation-fill-mode:backwards;/*2で解説*/
+    animation-duration:3s;/*3で解説*/
+    animation-iteration-count: 1;/*4で解説*/
+    animation-timing-function:ease;/*5で解説*/
+    animation-delay: 0.5s;/*6で解説*/
+    animation-direction:normal;/*7で解説*/
     }
-    100% {
-      transform: translateX(0);
+    
+    /*1で解説*/
+    @keyframes fadeInAnime{
+      0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
     }
-    40%,100% {
-      opacity: 1;
+
+    .fuwafuwa {
+      animation: fuwafuwa 1s infinite ease-in-out .8s alternate;
+      background:  no-repeat center center / 60px auto;
+      transition: 3.0s ease-in-out;
+
     }
-  }
+     
+    @keyframes fuwafuwa {
+      0% {
+        transform:translate(0, 0) rotate(-7deg);
+      }
+      50% {
+        transform:translate(0, -7px) rotate(0deg);
+      }
+      100% {
+        transform:translate(0, 0) rotate(7deg);
+      }
+    }
+    /*========= ページトップのためのCSS ===============*/
+
+#page-top a{
+  background:#942D2F;
+  color:#fff;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding:20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+#page-top a:hover{
+  background: #777;
+}

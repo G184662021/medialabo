@@ -49,7 +49,13 @@ console.log('都市名：'+data.name);
 console.log('最高気温：'+data.main.temp_max);
 console.log('最低気温：'+data.main.temp_min);
 
-
+// #page-topをクリックした際の設定
+$('#page-top').click(function () {
+  $('body,html').animate({
+      scrollTop: 0//ページトップまでスクロール
+  }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+  return false;//リンク自体の無効化
+});
 
 
 
