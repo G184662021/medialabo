@@ -81,7 +81,7 @@ html {
       max-width: 30%;
   }
 
-  .anim-box.slidein.is-animated {
+  .anim-box.slidein{
     animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
   }
    
