@@ -16,6 +16,8 @@ html {
   h1 {
     font-size: 4em;
     border-bottom: dotted 10px orangered;
+   
+     
   }
   
   h2 {
@@ -77,4 +79,21 @@ html {
   img{
       float: right;
       max-width: 30%;
+  }
+
+  .anim-box.slidein.is-animated {
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  }
+   
+  @keyframes slideIn {
+    0% {
+      transform: translateX(180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    40%,100% {
+      opacity: 1;
+    }
   }
