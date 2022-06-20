@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <header id="header">
+    <h1>Title</h1>
+    <div id="video-area">
+    <video id=”” poster="20220526_215354.jpg" webkit-playsinline playsinline muted autoplay loop>
+    <!--
+    poster：動画ファイルが利用できない環境で代替表示される画像
+    webkit-playsinline：iOS 9までのSafari用インライン再生指定
+    playsinline：iOS 10以降のSafari用インライン再生指定
+    muted：音声をミュートさせる
+    autoplay：動画を自動再生させる
+    loop：動画をループさせる
+    controls：コントロールバーを表示する
+    -->
+    <source src="video/movie.mp4" type="video/mp4">
+    <source src="video/movie.ogv" type="video/ogv">
+    <source src="video/movie.webm" type="video/webm">
+    <p>動画を再生できる環境ではありません。</p>
+    </video>
+    <!--/video-area--></div>
     <meta charset="utf-8">
     <title>世界の天気</title>
     <script src="weather.js"defer></script>
