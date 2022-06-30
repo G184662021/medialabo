@@ -20,14 +20,14 @@ let oceans = [
   '北太平洋',
   '南太平洋',
   '南極海'
-];
+]
 
 // ul 要素を新規作成する．（次の行を完成させる）
 ul = document.createElement('ul');
 
 // ul 要素を h2sevenOcean の次に追加する（次の行を書く）
 
-ul.insertAdjacentElement('afterend',ul);
+h2sevenOcean.insertAdjacentElement('afterend',ul);
 // ul に7つの大陸を追加する
 for (let o of oceans) {
     li = document.createElement('li');
