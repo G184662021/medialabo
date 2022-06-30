@@ -8,7 +8,6 @@ let kaisu = 0;
 // 予想を4回実行する
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 hantei();
-
 hantei();
 hantei();
 hantei();
@@ -18,14 +17,16 @@ function hantei(number) {
     let yoso = 4;
     // 第5回課題:テキストボックスの数値をここに代入
     // 課題3-1：ここの判定処理を作成する．
+    let a = document.querySelector('span#result')
+    let b = document.querySelector('span#answer')
     if(kaitou === yoso){
-        console.log('正解です．おめでとう!');
+        a.textContent = '正解です．おめでとう!';
     }
     else if(kaitou < yoso){
-        console.log('まちがい．答えはもっと小さいですよ');
+        a.textContent='まちがい．答えはもっと小さいですよ';
     }
     else if(kaitou > yoso){
-        console.log('まちがい．答えはもっと大きいですよ');
+        a.textContent='まちがい．答えはもっと大きいですよ';
     }
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
