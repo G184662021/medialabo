@@ -39,3 +39,18 @@ for (let o of oceans) {
 let h1 = document.querySelector('h1');
 h1.style.color = 'blue';
 h1.style.fontSize = '10pt';
+
+// すべての h2 要素を検索する（次の行を完成させる）
+let h2s = document.querySelectorAll('h2');
+
+// h2 要素に対して繰り返す
+for (let h2 of h2s) {
+  // h2 の背景色を 'palegreen' に変更する
+  //   (次の行を書く)
+  h2.style.backgroundColor ='palegreen';
+
+}
+let ls = document.querySelectorAll('li');
+for (let li of ls) {
+    li.classList.add('orangeUnderline');
+}
