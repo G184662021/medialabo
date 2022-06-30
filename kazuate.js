@@ -20,13 +20,13 @@ hantei();
     let a = document.querySelector('span#result')
     let b = document.querySelector('span#answer')
     b.textContent = kaisu+'回目の予想'+yoso;
-    if(kaitou === yoso){
+    if(kotae === yoso){
         a.textContent = '正解です．おめでとう!';
     }
-    else if(kaitou < yoso){
+    else if(kotae < yoso){
         a.textContent='まちがい．答えはもっと小さいですよ';
     }
-    else if(kaitou > yoso){
+    else if(kotae > yoso){
         a.textContent='まちがい．答えはもっと大きいですよ';
     }
     //        ページに表示する方法はまだ習っていないので
