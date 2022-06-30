@@ -1,5 +1,5 @@
-let face = "taro.png";
-let name = "拓殖太郎";
+let face = "hanako.png";
+let name = "茗荷谷花子";
 
 // img 要素を作成
 let img = document.createElement('img');
@@ -14,4 +14,5 @@ d.insertAdjacentElement('beforeend', img);
 // span#name 要素のテキストに名前を設定
 let s = document.querySelector('span#name');
 s.textContent = name;
+
 
