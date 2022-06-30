@@ -9,7 +9,7 @@ li = document.createElement('li');
 li.textContent = 'ヨーロッパ大陸';
 ul.insertAdjacentElement('beforeend',li)
 
-let h2sevenOcean = document.querySelector('h2#savenOcean')
+let h2sevenOcean = document.querySelector('h2#sevenOcean')
 
 // 7大洋　の名前を配列に代入
 let oceans = [
