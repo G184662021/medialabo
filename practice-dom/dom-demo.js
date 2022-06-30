@@ -32,7 +32,7 @@ ul.insertAdjacentElement('afterend',ul);
 for (let o of oceans) {
     li = document.createElement('li');
     li.textContent = o;
-    ul.insertAdjacentElement('beforeend',li);
+    li.insertAdjacentElement('afterend',li);
 
 }
 
