@@ -31,7 +31,7 @@ ul.insertAdjacentElement('afterend',ul);
 // ul に7つの大陸を追加する
 for (let o of oceans) {
     li = document.createElement('li');
-    li.textContent = oceans[o];
+    li.textContent = o;
     li.insertAdjacentElement('beforeend',li);
 
 }
