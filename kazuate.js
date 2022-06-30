@@ -19,7 +19,7 @@ hantei();
     // 課題3-1：ここの判定処理を作成する．
     let a = document.querySelector('span#result')
     let b = document.querySelector('span#answer')
-    b.textContent = kaisu+'回目の予想'+yoso;
+    b.textContent = kaisu+'回目の予想 '+yoso;
     if(kotae === yoso){
         a.textContent = '正解です．おめでとう!';
     }
