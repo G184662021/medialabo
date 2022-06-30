@@ -20,7 +20,7 @@ let oceans = [
   '北太平洋',
   '南太平洋',
   '南極海'
-]
+];
 
 // ul 要素を新規作成する．（次の行を完成させる）
 ul = document.createElement('ul');
@@ -32,7 +32,7 @@ ul.insertAdjacentElement('afterend',ul);
 for (let o of oceans) {
     li = document.createElement('li');
     li.textContent = o;
-    li.insertAdjacentElement('afterend',li);
+    li.insertAdjacentElement('beforeend',li);
 
 }
 
