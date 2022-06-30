@@ -13,12 +13,13 @@ hantei();
 hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
-function hantei(number) {
+//function hantei(number) {
     let yoso = 4;
     // 第5回課題:テキストボックスの数値をここに代入
     // 課題3-1：ここの判定処理を作成する．
     let a = document.querySelector('span#result')
     let b = document.querySelector('span#answer')
+    b.textContent = kaisu+'回目の予想'+yoso;
     if(kaitou === yoso){
         a.textContent = '正解です．おめでとう!';
     }
@@ -31,4 +32,3 @@ function hantei(number) {
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
 
-}
