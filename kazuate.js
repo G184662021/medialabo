@@ -15,11 +15,16 @@ function hantei() {
     // 第5回課題:テキストボックスの数値をここに代入
     let i = document.querySelector('input[name="nyuryoku"]');
     let yoso = i.value;
+    kaisu = kaisu +1;
     // 課題3-1：ここの判定処理を作成する．
     let a = document.querySelector('span#result')
     let b = document.querySelector('span#answer')
     b.textContent = kaisu+'回目の予想 '+yoso;
-    if(kotae === yoso){
+    if(kaisu >= 4){
+        a.textContent = '答えは'+kotae+'でした。すでにゲームはおわっています。';
+    }
+
+    else if(kotae === yoso){
         a.textContent = '正解です．おめでとう!';
     }
     else if(kotae < yoso){
