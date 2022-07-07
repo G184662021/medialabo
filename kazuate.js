@@ -14,7 +14,7 @@ function hantei() {
    
     // 第5回課題:テキストボックスの数値をここに代入
     let i = document.querySelector('input[name="nyuryoku"]');
-    let yoso = i.value;
+    let yoso = Number(i.value);
     kaisu = kaisu +1;
     // 課題3-1：ここの判定処理を作成する．
     let a = document.querySelector('span#result')
