@@ -117,6 +117,7 @@ let tenki =document.querySelector("span#tenki");
       let li;
       let i=document.querySelectorAll('input[name="know"]');
           ul=document.createElement("ul");
+          toshi.insertAdjacentElement("afterend",ul);
 
       for(r of i){
           if(r.checked){
