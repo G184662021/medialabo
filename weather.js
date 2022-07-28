@@ -82,6 +82,15 @@ function search() {
 
 }
 
+let ba = document.querySelector("span#basyo");
+let hk = document.querySelector("span#highkion");
+let lk = document.querySelector("span#lowkion");
+let si = document.querySelector("span#sitsudo");
+let huk = document.querySelector("span#huko");
+let hus = document.querySelector("span#husoku");
+let img = document.createElement('img');
+let tenki =document.querySelector("span#tenki");
+
 // 通信が成功した時の処理
 function showResult(resp) {
     // サーバから送られてきたデータを出力
