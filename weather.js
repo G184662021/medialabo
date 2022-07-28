@@ -1,12 +1,5 @@
-let ba = document.querySelector("span#basyo");
-let hk = document.querySelector("span#highkion");
-let lk = document.querySelector("span#lowkion");
-let si = document.querySelector("span#sitsudo");
-let hus = document.querySelector("span#husoku")
-let img = document.createElement('img');
-let tenki =document.querySelector("span#tenki");
-    let b = document.querySelector('button#push');
-    b.addEventListener('click', search);
+let b = document.querySelector('button#push');
+b.addEventListener('click', search);
 
     function search() {
       var a=document.getElementById('search');
@@ -117,7 +110,7 @@ let tenki =document.querySelector("span#tenki");
       let li;
       let i=document.querySelectorAll('input[name="know"]');
           ul=document.createElement("ul");
-          toshi.insertAdjacentElement("afterend",ul);
+          toshi.insertAdjacentElement("beforeend",ul);
 
       for(r of i){
           if(r.checked){
