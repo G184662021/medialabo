@@ -4,9 +4,9 @@ b.addEventListener('click', search)
 function search() {
   var a=document.getElementById('search');
   if(a.value ==="1") {
-    let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";  
+    let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";
     axios.get(url)
-    .then(showResult)   // 通信成功
+    .then(showResult)  //通信成功
     .catch(showError)   // 通信失敗
     .then(finish);  
   }else if(a.value ==="2" ){
