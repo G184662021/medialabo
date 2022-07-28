@@ -100,6 +100,17 @@ let tenki =document.querySelector("span#tenki");
             data = JSON.parse(data);
         }
       let a;
+        let toshi=document.querySelector('div#tosi');
+        if(data.name==="State of Rio de Janeiro"){
+            a="リオデジャネイロ";
+        }else if(data.name==="Paris"){
+            a="パリ";
+        }else{
+            a=data.name;
+        }
+        toshi.textContent='都市名:'+a;
+        
+
       
       let iremono;
       let r;
