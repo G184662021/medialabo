@@ -2,7 +2,6 @@ let b = document.querySelector('button#push');
 b.addEventListener('click', search)
 
 function search() {
-  searchon.play();
   var a=document.getElementById('search');
   if(a.value ==="1") {
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";  
