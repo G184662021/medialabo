@@ -109,10 +109,10 @@ function showResult(resp) {
     si.textContent =data.main.humidity+"%";
     huk.textContent =data.wind.deg;
     hus.textContent =data.wind.speed+"m/s";
-    let sun = "sun.png";
-    let cloud ="cloud.png";
-    let rain ="rain.png";
-    let kiri ="kiri.png";
+    let sun = "tennki-illust2.png";
+    let cloud = "tennki-illust6.png";
+    let rain = "tennki-illust7.png";
+    let kiri = "yama_kiri.png";
     if (te==='晴天'){
 
       img.setAttribute('src', sun);
