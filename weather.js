@@ -10,7 +10,6 @@ let tenki =document.querySelector("span#tenki");
     b.addEventListener('click', search);
 
     function search() {
-      searchon.play();
       var a=document.getElementById('search');
       if(a.value ==="1") {
         let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";  
@@ -100,31 +99,14 @@ let tenki =document.querySelector("span#tenki");
         if (typeof data === 'string') {
             data = JSON.parse(data);
         }
-
-
-
-
-  
-
       let a;
-      let toshi=document.querySelector('div#tosi');
-      if(data.name==="State of Rio de Janeiro"){
-          a="リオデジャネイロ";
-      }else if(data.name==="Paris"){
-          a="パリ";
-      }else{
-          a=data.name;
-      }
-      toshi.textContent='都市名:'+a;
       
-
       let iremono;
       let r;
       let ul;
       let li;
       let i=document.querySelectorAll('input[name="know"]');
           ul=document.createElement("ul");
-          toshi.insertAdjacentElement("afterend",ul);
 
       for(r of i){
           if(r.checked){
@@ -164,10 +146,6 @@ let tenki =document.querySelector("span#tenki");
               ul.insertAdjacentElement("beforeend",li);
           }
           }
-      }if(count>=1){
-          let p=document.createElement("p");
-          p.textContent=a+"の検索結果です  ⤴";
-          ul.insertAdjacentElement("afterend",p);
       }
   }
 
