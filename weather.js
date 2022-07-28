@@ -5,43 +5,106 @@ let si = document.querySelector("span#sitsudo");
 let hus = document.querySelector("span#husoku")
 let img = document.createElement('img');
 let tenki =document.querySelector("span#tenki");
-let count=0;
+
     let b = document.querySelector('button#push');
     b.addEventListener('click', search);
 
-// 通信を開始する処理
-function search() {
-  console.log(count);    
-  let math;
-  let x;
-      let y=document.querySelectorAll('input[name="push"]');
-      for(math of y){
-          if(math.checked){
-              x=math.value;
-          }
+    function search() {
+      searchon.play();
+      var a=document.getElementById('search');
+      if(a.value ==="1") {
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";  
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);  
+      }else if(a.value ==="2" ){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/524901.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value=== "3"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/993800.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value === "4"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/1816670.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);  
+      }else if(a.value === "5"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/1850147.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value === "6"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/1880252.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value === "7"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/2147714.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value=== "8"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/2643743.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value === "9"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/2968815.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value === "10"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/3451189.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value === "11"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/5128581.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else if(a.value ==="12"){
+        let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/5368361.json";
+        axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);
+      }else {
+        let url =null;
+        
       }
+    
+    }
+    
+    // 通信が成功した時の処理
+    function showResult(resp) {
+        // サーバから送られてきたデータを出力
+        let data = resp.data;
+    
+        // data が文字列型なら，オブジェクトに変換する
+        if (typeof data === 'string') {
+            data = JSON.parse(data);
+        }
 
-      // URL を設定
-      let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+x+'.json';
-
-      // 通信開始
-      axios.get(url)
-          .then(showResult)   // 通信成功
-          .catch(showError)   // 通信失敗
-          .then(finish);      // 通信の最後の処理
-  }
 
 
-  // 通信が成功した時の処理
-  function showResult(resp) {
-      count+=1;
-      // サーバから送られてきたデータを出力
-      let data = resp.data;
 
-      // data が文字列型なら，オブジェクトに変換する
-      if (typeof data === 'string') {
-          data = JSON.parse(data);
-      }
+  
 
       let a;
       let toshi=document.querySelector('div#tosi');
