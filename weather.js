@@ -1,3 +1,12 @@
+let ba = document.querySelector("span#basyo");
+let hk = document.querySelector("span#highkion");
+let lk = document.querySelector("span#lowkion");
+let si = document.querySelector("span#sitsudo");
+let huk = document.querySelector("span#huko");
+let hus = document.querySelector("span#husoku");
+let img = document.createElement('img');
+let tenki =document.querySelector("span#tenki");
+
 let b = document.querySelector('button#push');
 b.addEventListener('click', search)
 
@@ -82,14 +91,7 @@ function search() {
 
 }
 
-let ba = document.querySelector("span#basyo");
-let hk = document.querySelector("span#highkion");
-let lk = document.querySelector("span#lowkion");
-let si = document.querySelector("span#sitsudo");
-let huk = document.querySelector("span#huko");
-let hus = document.querySelector("span#husoku");
-let img = document.createElement('img');
-let tenki =document.querySelector("span#tenki");
+
 
 // 通信が成功した時の処理
 function showResult(resp) {
@@ -102,12 +104,7 @@ function showResult(resp) {
     }
     let te =data.weather[0].description;
     tenki.textContent =data.weather[0].description;
-    ba.textContent =data.name;
-    hk.textContent =data.main.temp_max+"℃";
-    lk.textContent =data.main.temp_min+"℃";
-    si.textContent =data.main.humidity+"%";
-    huk.textContent =data.wind.deg;
-    hus.textContent =data.wind.speed+"m/s";
+   
     let sun = "tennki-illust2.png";
     let cloud = "tennki-illust6.png";
     let rain = "tennki-illust7.png";
