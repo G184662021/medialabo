@@ -19,84 +19,72 @@ function search() {
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);  
-    // te='晴天';
   }else if(a.value ==="2" ){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/524901.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='厚い雲';
   }else if(a.value=== "3"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/993800.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='雲';
   }else if(a.value === "4"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/1816670.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);  
-    // te='曇りがち';
   }else if(a.value === "5"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/1850147.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='曇りがち';
   }else if(a.value === "6"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/1880252.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='曇りがち';
   }else if(a.value === "7"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/2147714.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='小雨';
   }else if(a.value=== "8"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/2643743.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='曇りがち';
   }else if(a.value === "9"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/2968815.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='霧';
   }else if(a.value === "10"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/3451189.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='厚い雲';
   }else if(a.value === "11"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/5128581.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='厚い雲';
   }else if(a.value ==="12"){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/5368361.json";
     axios.get(url)
     .then(showResult)   // 通信成功
     .catch(showError)   // 通信失敗
     .then(finish);
-    // te='雲';
   }else {
     let url =null;
     
