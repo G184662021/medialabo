@@ -30,22 +30,19 @@
       </select>  
     <button id="push">検索</button>
     </p>
-                <span id="basyo"></span>の天気
-              </div>
-              <div class="card__overviewtext">
-                <div class="info">
-                  <h2 class="tenki"><span id="tenki"></span></h2>
-                  <div class="date"><div class="situdo">湿度</div>|<div class="huk">風向</div>|<div class="husok">風速</div></div>
-                  <h2 class="date"><h2 class="situdo"><span id="sitsudo"></span></h2>|<h2 class="huk">北から<span id="huko"></span>° </h2>|<h2 class="husok"> <span id="husoku"></span></h2></h2>
-                  <h2>最高気温|最低気温</h2>
-                  <h2 class="temp"> <span id="highkion"></span> | <span id="lowkion"></span> </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div id="closeModal" class="closeModal">
-        </div>
+    <p class="flow">
+      <input type="checkbox" name="know" id="know" value="weather.description">
+      <label for="know">天気</label>
+      <input type="checkbox" name="know" id="know" value="main.temp_max">
+      <label for="know">最高気温</label>
+      <input type="checkbox" name="know" id="know" value="main.temp_min">
+      <label for="know">最低気温</label>
+      <input type="checkbox" name="know" id="know" value="main.humidity">
+      <label for="know">湿度</label>
+      <input type="checkbox" name="know" id="know" value="wind.speed">
+      <label for="know">風速</label>
+      </p>
+   
+    
   </body>
 </html>
