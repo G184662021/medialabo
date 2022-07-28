@@ -120,7 +120,7 @@ b.addEventListener('click', search);
                   li.textContent='天気:'+ data.weather[0].description;
                   ul.insertAdjacentElement("beforeend",li);
                   if(data.weather[0].main==="Clear"){
-                      ul.style.backgroundColor="rgba(2, 175, 255, 0.373)";
+                      ul.style.backgroundColor= "rgba(253, 156, 5, 0.84)" ;
                   }else if(data.weather[0].main==="Clouds"){
                       ul.style.backgroundColor="rgba(177, 174, 197, 0.575)";
                   }else if(data.weather[0].main==="Rain"){
