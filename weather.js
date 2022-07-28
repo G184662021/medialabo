@@ -91,7 +91,6 @@ let tenki =document.querySelector("span#tenki");
     
     // 通信が成功した時の処理
     function showResult(resp) {
-      count+=1;
         // サーバから送られてきたデータを出力
         let data = resp.data;
     
@@ -152,10 +151,6 @@ let tenki =document.querySelector("span#tenki");
                   li.textContent='風速:'+ data.wind.speed+"m/s";
                   ul.insertAdjacentElement("beforeend",li);
               }
-          if(iremono==='feels_like'){
-              li.textContent='体感温度:'+data.feels_like+"℃";
-              ul.insertAdjacentElement("beforeend",li);
-          }
         }
       }
         
