@@ -104,6 +104,12 @@ function showResult(resp) {
     }
     let te =data.weather[0].description;
     tenki.textContent =data.weather[0].description;
+    ba.textContent =data.name;
+    hk.textContent =data.main.temp_max+"℃";
+    lk.textContent =data.main.temp_min+"℃";
+    si.textContent =data.main.humidity+"%";
+    huk.textContent =data.wind.deg;
+    hus.textContent =data.wind.speed+"m/s";
    
     let sun = "tennki-illust2.png";
     let cloud = "tennki-illust6.png";
