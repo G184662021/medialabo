@@ -1,8 +1,26 @@
 <!DOCTYPE html> 
-<html land="en">
+<html land="ja">
     <head>
         <meta charset="UTF-8">
         <title>課題２</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                text-align: center;
+            }
+            img {
+                max-width: 100px;
+                cursor: pointer;
+            }
+            img:hover::after {
+                content: attr(title);
+            }
+        </style>
     </head>
     <body>
         <h2 style="text-align: center">歴代総長</h2>
