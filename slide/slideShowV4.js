@@ -1,10 +1,9 @@
 let count = 0;
 let url;
-let nowPlaying = false;
-let timer;
-
 const main = document.querySelector("div>img");
 const thumb = document.querySelector("div.thumbnails");
+let nowPlaying = false;
+let timer;
 
 function next() {
     let old = count;
@@ -67,19 +66,19 @@ function reset() {
     thumb.children[count].classList.add("selected");
 }
 
-function fastForward() {
+function doubleSpeedPlay() {
     stop();
     autoPlay();
 }
 
-function reverse() {
+function reversePlay() {
     stop();
     prev();
-    timer = setTimeout(reverse, 1000);
+    timer = setTimeout(reversePlay, 1000);
 }
 
-function fastReverse() {
+function doubleSpeedReversePlay() {
     stop();
     prev();
-    timer = setTimeout(fastReverse, 500);
+    timer = setTimeout(doubleSpeedReversePlay, 500);
 }
