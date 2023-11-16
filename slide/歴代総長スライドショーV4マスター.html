@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>スライドショー</title>
-    <link rel="stylesheet" href="slideShowV4.css">
+    <link rel="stylesheet" href="css/slideShowV4.css">
   </head>
   <body>
     <div class="title">
@@ -18,6 +18,9 @@
       <button type="button" onclick="play()">再生</button>
       <button type="button" onclick="stop()">停止</button>
       <button type="button" onclick="reset()">リセット</button>
+      <button type="button" onclick="doubleSpeedPlay()">倍速再生</button>
+      <button type="button" onclick="reversePlay()">逆再生</button>
+      <button type="button" onclick="doubleSpeedReversePlay()">倍速逆再生</button>
     </div>
     <div class="thumbnails">
       <img class="selected" src="https://www.takushoku-u.ac.jp/summary/images/summary_successive-chancellor_img_01.jpg">
@@ -40,6 +43,6 @@
       <img src="https://www.takushoku-u.ac.jp/summary/images/summary_successive-chancellor_img_18.jpg">
       <img src="https://www.takushoku-u.ac.jp/summary/images/summary_successive-chancellor_img_19.jpg">
     </div>
-    <script src="slideShowV4.js"></script>
+    <script src="js/slideShowV4.js"></script>
   </body>
 </html>
