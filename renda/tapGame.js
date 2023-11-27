@@ -12,17 +12,14 @@ const score = document.getElementById("score");
 const main = document.getElementById("main");
 const startButton = document.getElementById("startButton");
 
-// タップ数表示エレメント
-const tapCountDisplay = document.getElementById("tapCount");
-
 // 「Start」ボタン押下時の処理
 function startGame() {
   // ボタンの非表示
   startButton.style.display = "none";
-  
+
   // タップカウンターのリセットと表示
   counter = 0;
-  tapCountDisplay.textContent = "タップ数: " + counter;
+  score.textContent = "スコア: 0";
 
   // タイマーリセット(カウントダウン＋10秒)
   countTimer = 13;
@@ -32,7 +29,7 @@ function startGame() {
 
 // タイマー処理
 function countTime(time) {
-  if (time > 0){
+  if (time > 0) {
     if (time >= 11) {
       tapFlag = false;
     } else if (time == 10) {
@@ -46,9 +43,7 @@ function countTime(time) {
   } else {
     // 時間切れの処理
     tapFlag = false;
-    countDown.textContent = "タイムアップ！";
-    // スコア表示
-    score.textContent = "スコア: " + counter;
+    countDown.textContent = "タイムアップ！ スコア: " + counter;
     // ボタンの表示
     startButton.style.display = "block";
   }
@@ -56,9 +51,9 @@ function countTime(time) {
 
 // タップ数カウント
 function tapCount() {
-  if (tapFlag) { 
+  if (tapFlag) {
     counter += 1;
-    // タップ数を表示
-    tapCountDisplay.textContent = "タップ数: " + counter;
+    // タップ数とスコアを表示
+    score.textContent = "スコア: " + counter;
   }
 }
