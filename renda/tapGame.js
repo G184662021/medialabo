@@ -18,8 +18,7 @@ function startGame() {
   startButton.style.display = "none";
   // タップカウンターのリセットと表示
   counter = 0;
-  score.textContent = "スコア: " + counter;
-
+  updateScore();
   // タイマーリセット(カウントダウン＋10秒)
   countTimer = 13;
   // タイマーを起動
@@ -28,16 +27,13 @@ function startGame() {
 
 // タイマー処理
 function countTime(time) {
-  if (time > 0){
+  if (time > 0) {
     if (time >= 11) {
       tapFlag = false;
-
     } else if (time == 10) {
       tapFlag = true;
-
     } else {
       tapFlag = true;
-
     }
     time -= 1;
     // １秒後にtimeを引数にしてcountTime()を呼び出す
@@ -48,15 +44,19 @@ function countTime(time) {
     countDown.textContent = "タイムアップ！ スコア: " + counter;
     // ボタンの表示
     startButton.style.display = "block";
-    
   }
 }
 
 // タップ数カウント
 function tapCount() {
-  if (tapFlag) { 
+  if (tapFlag) {
     counter += 1;
     // タップ数を表示
-    score.textContent = "スコア: " + counter;
+    updateScore();
   }
+}
+
+// スコア表示更新
+function updateScore() {
+  score.textContent = "スコア: " + counter;
 }
