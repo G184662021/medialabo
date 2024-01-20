@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>チンチロリン</title>
+</head>
+<body>
+  <div class="container">
+    <h1>チンチロリン</h1>
+    <div id="playerSelection">
+      <label for="playerCount">プレイヤー人数：</label>
+      <select id="playerCount">
+        <option value="2">2人</option>
+        <option value="3">3人</option>
+        <option value="4">4人</option>
+        <option value="5">5人</option>
+      </select>
+      <button onclick="startGame()">ゲームスタート</button>
+    </div>
+    <div id="gameScene" style="display: none;">
+      <h2>ゲーム進行中...</h2>
+      <div id="diceContainer">
+        <img id="dice1" src="img/dice1.png" alt="dice1">
+        <img id="dice2" src="img/dice1.png" alt="dice2">
+        <img id="dice3" src="img/dice1.png" alt="dice3">
+      </div>
+      <button onclick="rollDice()">サイコロ振る</button>
+      <div id="result"></div>
+      <div id="ranking"></div>
+    </div>
+  </div>
+  <script src="tintiro.js"></script>
+</body>
+</html>
